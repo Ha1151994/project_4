@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========== UNICONS ==========-->
+
+
+    <!--========== BOXICONS ==========-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== SWIPER CSS ==========-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--========== MAIN CSS ==========-->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Responsive portfolio website - Crypticalcoder</title>
+</head>
+
+<body>
+    <!--===== Work =====-->
+    <section class="Product container" id="Product">
+        <div class="products__portfolio">
+            <h2 data-heading="MY portfolio" class="section__title">products</h2>
+            <div class="iconCart">
+                <svg class="svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                 fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+                </svg>
+                <div class="totalQuantity">0</div>
+            </div>
+        </div>
+        <div class="search">
+            <div class="search-bar">
+                <input type="text" placeholder="Search.." id="search_txt">
+            </div>
+            <div id="myDropdown" class="search-bar">
+                <input type="text" placeholder="Search.." id="search_department" onkeyup="filterFunction()">
+                <a href="#ALL"></a>
+                <a href="#progrming"></a>
+                <a href="#web"></a>
+                <a href="#design"></a>
+
+            </div>
+        </div>
+    <div class="Product__filters">
+        <span class="Product__item active-Product" data-filter="all">ALL</span>
+        <span class="Product__item" data-filter=".Web">Web</span>
+        <span class="Product__item" data-filter=".App">App</span>
+        <span class="Product__item " data-filter=".Design">Design</span>
+    </div>
+    <div class="Product_container container grid" id="container">
+
+    </div>
+    </section>
+            <div class="item">     
+            </div>
+    <div class="CartTab grid">
+        <h1>Cart</h1>
+        <div class="listcart">
+        </div>
+        <div class="btn">
+            <div class="Close">Close</div>
+            <div class="Check__Out">
+                <a href="javascript:void(0);" onclick="checkout()">CheckOut</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--========== PRODUCT JS ==========-->
+    <script src="assets/js/product.js"></script>
+</body>
+
+</html>
